@@ -1,0 +1,223 @@
+/* ***** visual ***** */
+#bVisual {
+    width: 100%; height: 430px;
+    background-image: url(../images/boardVisual.jpg);
+    background-repeat: no-repeat;
+}
+
+#bVisual .sTitle {
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+    line-height: 430px;
+}
+
+
+/* ***** board ***** */
+#board {
+    width: 100%; height: 1310px;
+    background-color: #fff;
+}
+#board .wrapper {
+    width: 1260px; height: inherit;
+    margin: 0 auto;
+    position: relative;
+    box-sizing: border-box;
+    padding-top: 120px;
+}
+
+/* ** board title ** */
+#board .bTit {
+    width: 100%; height: 54px;
+    margin-bottom: 20px;
+}
+#board .bTit .tit {
+    font-size: 35px;
+    color: #666;
+    height: 52px;
+}
+#board .bTit .titBar {
+    width: 100%; height: 2px;
+    background-color: #aaa;
+}
+
+/* ** search Bar ** */
+#board .searchBar {
+    text-align: right;
+    margin-bottom: 10px;
+}
+#board .searchBar .selectbox {
+    width: 120px; height: 50px;
+    font-size: 15px; color: #666;
+    border: 1px solid #aaa;
+    box-sizing: border-box;
+    padding-left: 15px;
+}
+#board .searchBar #bSearch {
+    width: 250px; height: 44px;
+    font-size: 15px;
+    position: relative;
+    top: -1px; left: -5px;
+}
+#board .searchBar .sBtn {
+    width: 50px; height: 50px;
+    background-image: url(../images/boardSearch.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    top:19px; left: -11px;
+    background-color: #fff;
+    box-sizing: border-box;
+    border-right: 1px solid #aaa;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+    border-left: none;
+}
+#board .searchBar .sBtn:hover {
+    background-color: #007DAB;
+    background-image: url(../images/boardSearch_on.png);
+}
+
+
+/* ***** board list ***** */
+/* ** list title ** */
+#board .boardList .listName {
+    width: 100%; height: 54px;
+    line-height: 54px;
+    background-color: #eee;
+    position: relative;
+}
+#board .boardList .listName span {
+    color: #666;
+    font-size: 15px;
+    position: absolute;
+}
+#board .boardList .listName .itemTitle {left: 139px;}
+#board .boardList .listName .userTitle {left: 890px;}
+#board .boardList .listName .dayTitle {right: 172px;}
+#board .boardList .listName .countTitle {right: 45px;}
+
+/* ** list ** */
+#board .boardList .itemList {
+    margin-bottom: 33px;
+}
+#board .boardList .itemList li {
+    width:100%; height: 64px;
+    border-bottom: 1px solid #eee;
+    position: relative;
+}
+#board .boardList .itemList li.notice {
+    background-color: #fdfdfd;
+}
+#board .boardList .itemList li p {
+    font-size: 13px;
+    position: absolute;
+    height: 64px; line-height: 64px;
+    color: #999;
+}
+#board .boardList .itemList li .new { color: #FFB741;}
+
+#board .boardList .itemList li .number {
+    text-align: center;
+    width: 26px;
+    left: 40px;
+}
+#board .boardList .itemList li .number strong {
+    color: #007DAB;
+    font-weight: bold;
+}
+
+#board .boardList .itemList li .item {
+    width: 700px;
+    left: 139px;
+}
+#board .boardList .itemList li .item a {
+    color: #666;
+}
+#board .boardList .itemList li .item a:hover {
+    text-decoration: underline;
+}
+
+#board .boardList .itemList li .userName {
+    left: 890px;
+    width: 100px;
+}
+
+#board .boardList .itemList li .date {
+    font-family: 'Nanum Gothic';
+    left: 1033px;
+    width: 80px;
+}
+
+#board .boardList .itemList li .count {
+    width: 43px;
+    text-align: center;
+    right: 45px;
+}
+
+
+/* ***** writeBtn ***** */
+#board .write {
+    height: 50px; width: 100%;
+    margin-bottom: 30px;
+}
+#board .write .writeBtn {
+    float:right;
+    width: 198px; height: 50px;
+    background-color: #007DAB;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 15px;
+    color: #fff;
+}
+
+/* ***** page ***** */
+#board .page {
+    text-align: center;
+    height: 40px;
+}
+#board .page span {
+    display: inline-block;
+    width: 40px; height: 40px;
+    line-height: 40px;
+    color: #666;
+    cursor: pointer;
+}
+#board .page .goBtn {
+    border: 1px solid #aaa;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+}
+#board .page .goBtn.start {
+    background-image: url(../images/pageStart.png);
+    background-position: 44% 50%;
+}
+#board .page .goBtn.pre {
+    background-image: url(../images/pagePre.png);
+    background-position: 45% 50%;
+}
+#board .page .goBtn.next {
+    background-image: url(../images/pageNext.png);
+    background-position: center;
+}
+#board .page .goBtn.end {
+    background-image: url(../images/pageEnd.png);
+    background-position: center;
+}
+#board .page .goBtn:active {
+    background-color: #aaa;
+}
+#board .page .num {
+    position: relative;
+    top:-15px;
+}
+#board .page .num:hover {
+    color: #007DAB;
+    text-decoration: underline;
+}
+#board .page .num.active {
+    color: #fff;
+    background-color: #007DAB;
+}
+
