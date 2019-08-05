@@ -1,0 +1,215 @@
+body{
+	font-family: 'Exo','Nanum Gothic', sans-serif;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	background-color : #FFFFFF;
+	font-weight: bold;
+	position : relative;
+}
+
+section a:link, article a:link { text-decoration:none; color:black;}
+section a:visited, article a:visited { text-decoration:none; color:black;}
+section a:hover, article a:hover { text-decoration:none; color:black;}
+
+section {
+	width:100%;
+	height:517px;
+}
+article {
+	width:100%;
+	height:714px;
+}
+
+section p {
+	display : inline-block;
+	text-align : left;
+	box-sizing : border-box;
+	padding : 12px;
+	padding-left : 15px;
+	background-color : #eeeeee;
+	width : 740px;
+	height : 50px;
+	font-size : 20px;
+	
+}
+.c_sale p, .c_new p, .c_dlc p{
+	font-size : 15px;
+	display : inline-block;
+	text-align : left;
+	box-sizing : border-box;
+	padding : 15px;
+	padding-left : 15px;
+	background-color : #eeeeee;
+	width : 304px;
+	height : 50px;
+}
+.c_view p{
+	font-size : 15px;
+	display : inline-block;
+	text-align : left;
+	box-sizing : border-box;
+	padding : 15px;
+	padding-left : 15px;
+	background-color : #eeeeee;
+	width : 360px;
+	height : 50px;
+}
+.price{
+	display : inline-block;
+	text-align : center;
+	box-sizing : border-box;
+	padding : 4px;
+	background-color : #FFB741;
+	color : 000000;
+	width : 85px;
+	height : 30px;
+	border-radius :20px;
+    position: absolute;
+    bottom:10px; right: 5px;
+}
+
+.pricebest{
+	display : inline-block;
+	text-align : center;
+	box-sizing : border-box;
+	padding : 5px;
+	background-color : #FFB741;
+	color : 000000;
+	width : 100px;
+	height : 36px;
+	border-radius :20px;
+	font-size : 19px;
+    position: absolute;
+    bottom:8px; right: 5px;
+
+}
+span {
+	font-size : 30px;
+}
+.setreft,.rank1{
+
+	display : inline-block;
+	box-sizing : border-box;
+	font-size : 20px;
+	background-color : #eeeeee;
+	width : 500px;
+	height : 105px;
+	text-align : left;
+	padding-left : 7px;
+	padding-top : 5px;
+}
+.rank1 p{
+	text-align :right;
+	padding-right: 5px;
+	padding-top : 25px;
+}
+.setreft p
+{
+	text-align :right;
+	padding-right: 5px;
+	padding-top : 37px;
+}
+.rankbutton{
+	display : inline-block;
+	text-align : center;
+	box-sizing : border-box;
+	font-size : 25px;
+	width : 163px;
+	height : 150px;
+	background-color : #ffffff;
+	text-align : center;
+	padding-top : 58px;
+}
+
+.rankbutton:hover{
+	background-color : #007dab;
+}
+.rankbutton:visited{
+	background-color : #007dab;
+}
+aside ul li:hover{
+	background-color : #007dab;
+}
+aside ul li:visited{
+	background-color : #007dab;
+}
+.c_best1{
+	position : absolute;
+	top:137px;
+	left:210px;
+}
+.c_best2{
+	position : absolute;
+	top:137px;
+	left:970px;
+}
+.c_new1{
+	position:absolute ; left:210px; top:616px;
+}
+.c_new2{
+	position:absolute ; left:532px; top:616px;
+}
+.c_new3{
+	position:absolute ; left:858px; top:616px;
+}
+.c_sale1{
+	position:absolute ; left:210px; top:1051px;
+}
+.c_sale2{
+	position:absolute ; left:532px; top:1051px;
+}
+.c_sale3{
+	position:absolute ; left:858px; top:1051px;
+}
+.c_dlc1{
+	position:absolute ; left:210px; top:1486px;
+}
+.c_dlc2{
+	position:absolute ; left:532px; top:1486px;
+}
+.c_dlc3{
+	position:absolute ; left:858px; top:1486px;
+}
+.rank{
+	position:absolute ; left:1210px; top:616px;
+}
+.c_view1{
+	position:absolute ; left:210px; top:1921px;
+}
+.c_view2{
+	position:absolute ; left:590px; top:1921px;
+}
+.c_view3{
+	position:absolute ; left:970px; top:1921px;
+}
+.c_view4{
+	position:absolute ; left:1350px; top:1921px;
+}
+.c_view5{
+	position:absolute ; left:210px; top:2367px;
+}
+.c_view6{
+	position:absolute ; left:590px; top:2367px;
+}
+.c_view7{
+	position:absolute ; left:970px; top:2367px;
+}
+.c_view8{
+	position:absolute ; left:1350px; top:2367px;
+}
+.c_view9{
+	position:absolute ; left:210px; top:2811px;
+}
+.c_view10{
+	position:absolute ; left:590px; top:2811px;
+}
+.c_view11{
+	position:absolute ; left:970px; top:2811px;
+}
+.c_view12{
+	position:absolute ; left:1350px; top:2811px;
+}

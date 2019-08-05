@@ -1,0 +1,220 @@
+/* ***** visual ***** */
+#bVisual {
+    width: 100%; height: 430px;
+    background-image: url(../images/ucc_1.jpg);
+    background-repeat: no-repeat;
+}
+
+#bVisual .sTitle {
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+    line-height: 430px;
+}
+
+
+/* ***** board ***** */
+#board {
+    width: 100%; height: 1310px;
+    background-color: #fff;
+}
+#board .wrapper {
+    width: 1260px; height: inherit;
+    margin: 0 auto;
+    position: relative;
+    box-sizing: border-box;
+    padding-top: 120px;
+}
+
+/* ** board title ** */
+#board .bTit {
+    width: 100%; height: 54px;
+    margin-bottom: 20px;
+}
+#board .bTit .tit {
+    font-size: 35px;
+    color: #666;
+    height: 52px;
+}
+#board .bTit .titBar {
+    width: 100%; height: 2px;
+    background-color: #aaa;
+}
+
+/* ** search Bar ** */
+#board .searchBar {
+    text-align: right;
+    margin-bottom: 10px;
+}
+#board .searchBar .selectbox {
+    width: 120px; height: 50px;
+    font-size: 15px; color: #666;
+    border: 1px solid #aaa;
+    box-sizing: border-box;
+    padding-left: 15px;
+}
+#board .searchBar #bSearch {
+    width: 250px; height: 44px;
+    font-size: 15px;
+    position: relative;
+    top: -1px; left: -5px;
+}
+#board .searchBar .sBtn {
+    width: 50px; height: 50px;
+    background-image: url(../images/boardSearch.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    top:17px; left: -11px;
+    background-color: #fff;
+    box-sizing: border-box;
+    border-right: 1px solid #aaa;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+    border-left: none;
+}
+#board .searchBar .sBtn:hover {
+    background-color: #007DAB;
+    background-image: url(../images/boardSearch_on.png);
+}
+
+
+/* ***** board list ***** */
+/* ** list title ** */
+.boardList {
+    height :850px;
+    position: relative;
+}
+#board .boardList .listName {
+    width: 100%; height: 54px;
+    line-height: 54px;
+    background-color: #eee;
+    position: relative;
+}
+#board .boardList .listName span {
+    color: #666;
+    font-size: 15px;
+    position: absolute;
+}
+#board .boardList .listName {width : 324px height :685px;}
+#board .boardList .listName .srcTitle {left : 300px;}
+#board .boardList .listName .movTitle {right: 300px;}
+
+/* ** list ** */
+.pic .text1 {
+    font-size : 15px;
+    display : inline-block;
+    text-align : left;
+    box-sizing : border-box;
+    padding : 7px;
+    padding-left : 10px;
+    background-color : #eeeeee;
+    width : 280px;
+    height : 57px;
+    line-height : 150%;
+ }
+ .pic .text1 span{
+    text-align : right; margin-left : 130px;
+ }
+.c_ucc1{
+    position:absolute ; left:0px; top:100px;
+}
+.c_ucc2{
+    position:absolute ; left:330px; top:100px;
+}
+.c_ucc3{
+    position:absolute ; left:654px; top:100px;
+}
+.c_ucc4{
+    position:absolute ; left:980px; top:100px;
+}
+.c_ucc5{
+    position:absolute ; left:0px; top:342px;
+}
+.c_ucc6{
+    position:absolute ; left:330px; top:342px;
+}
+.c_ucc7{
+    position:absolute ; left:654px; top:342px;
+}
+.c_ucc8{
+    position:absolute ; left:980px; top:342px;
+}
+.c_ucc9{
+    position:absolute ; left:0px; top:584px;
+}
+.c_ucc10{
+    position:absolute ; left:330px; top:584px;
+}
+.c_ucc11{
+    position:absolute ; left:654px; top:584px;
+}
+.c_ucc12{
+    position:absolute ; left:980px; top:584px;
+}
+
+
+/* ***** writeBtn ***** */
+#board .write {
+    height: 50px; width: 100%;
+    margin-bottom: 30px;
+}
+#board .write .writeBtn {
+    float:right;
+    width: 198px; height: 50px;
+    background-color: #007DAB;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 15px;
+    color: #fff;
+}
+
+/* ***** page ***** */
+#board .page {
+    text-align: center;
+    height: 40px;
+}
+#board .page span {
+    display: inline-block;
+    width: 40px; height: 40px;
+    line-height: 40px;
+    color: #666;
+    cursor: pointer;
+}
+#board .page .goBtn {
+    border: 1px solid #aaa;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+}
+#board .page .goBtn.start {
+    background-image: url(../images/pageStart.png);
+    background-position: 44% 50%;
+}
+#board .page .goBtn.pre {
+    background-image: url(../images/pagePre.png);
+    background-position: 45% 50%;
+}
+#board .page .goBtn.next {
+    background-image: url(../images/pageNext.png);
+    background-position: center;
+}
+#board .page .goBtn.end {
+    background-image: url(../images/pageEnd.png);
+    background-position: center;
+}
+#board .page .goBtn:active {
+    background-color: #aaa;
+}
+#board .page .num {
+    position: relative;
+    top:-15px;
+}
+#board .page .num:hover {
+    color: #007DAB;
+    text-decoration: underline;
+}
+#board .page .num.active {
+    color: #fff;
+    background-color: #007DAB;
+}

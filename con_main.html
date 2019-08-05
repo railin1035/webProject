@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Breeder:콘솔게임</title>
+    <link href="https://fonts.googleapis.com/css?family=Exo:200,400,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+    
+    <link rel="stylesheet" href="js/bxslider/src/css/jquery.bxslider.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/bxslider/src/js/jquery.bxslider.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/con_main.css">
+
+    <script src="js/common.js"></script>
+    <script src="js/console_bx.js"></script>
+    <script src="js/con_main.js"></script>
+</head>
+<body>
+    <!-- ------- header ------- -->
+    <header>
+        <h1 class="logo"><a href="index.html"><img src="images/logo.png" alt="logo"></a></h1>
+        <div id="s_bar">
+            <from id="searchFrom" name="searchForm" method="get" action="">
+                <p class="s_box">
+                    <input type="text" id="search" maxlength="30" name="search">
+                </p>
+                <p class="b_box">   
+                    <input type="submit" value="" id="go" onclick="searching()">
+                </p>
+            </from>
+        </div>
+        <nav>
+            <p class="hamb" onclick="view(this)">
+                <img src="images/hamburger.png">
+            </p>
+            <ul class="lnb clearfix">
+                <li><a href="login.html" target="_blank">로그인</a></li>
+                <li><a href="join.html" target="_blank">회원가입</a></li>
+                <li><a href="cart.html" target="_blank">장바구니</a></li>
+            </ul>
+            <ul class="gnb">
+                <li><a href="con_main.html">콘솔게임</a></li>
+                <li><a href="pc_main.html">PC게임</a></li>
+                <li><a href="#">모바일게임</a></li>
+                <li><a href="freeboard.html">커뮤니티</a></li>
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">게임뉴스</a></li>
+            </ul>
+        </nav>
+        <div id="playing" class="cMovie">
+            <video controls>
+                <source src="images/monhun.mp4" type="video/mp4"/>
+            </video>
+            <p class="close"><img src="images/m_btn_close.png"></p>
+        </div>
+    </header>
+
+    
+	<!-- ------- visual ------- -->
+    <section class="visual">
+        <ul class="bxslider">
+            <li class="visual01">
+                <div class="contant">
+                    <h2 class="tit">FIFA 19 WORLD TOUR</h2>
+                    <p class="desc">The World's Game x The World's Biggest Stars.<br>This is the FIFA 19 World Tour.</p>
+                    <p class="v_btn"><a href="sublist_console.html">MORE</a></p>
+                </div>
+            </li>
+            <li class="visual02">
+                <div class="contant">
+                    <p class="v_btn"><a href="sublist_console.html">SHOP</a></p>
+                </div>
+                
+            </li>
+            <li class="visual03">
+                <div class="contant">
+                    <h2 class="tit">RED DEAD ONLINE BETA</h2>
+                    <p class="desc">이제 공식적으로 모든 구매자에게 Red Dead 온라인 베타를 오픈합니다.<br>총잡이 또는 무법자가 되어 이름을 날려 보세요.</p>
+                    <p class="v_btn"><a href="sublist_console.html">MORE</a></p>
+                </div>
+            </li>
+        </ul>
+    </section>
+    
+    
+    <!-- ------- slideMenu ------- -->
+    <section id="slideMenu">
+    <!-- ------- menu bar ------- -->
+        <div class="wrapper">
+            <ul class="selectMenu clearfix">
+                <li>
+                    <p class="tapTit line">WEEKLY BEST</p>
+                    <div class="slideItem">
+                        <ul class="subslider clearfix">
+                            <li class="con">
+                                <div class="imgBox">
+                                    <a href="sublist_console.html"><img src="images/best1.jpg"></a>
+                                </div>
+                                <div class="titBox">
+                                    <h3 class="tit">TEKKEN 7</h3>
+                                    <h4 class="stit">Season Pass 2</h4>
+                                </div>
+                            </li>
+                            <li class="con">
+                                <div class="imgBox">
+                                    <a href="sublist_console.html"><img src="images/best2.jpg"></a>
+                                </div>
+                                <div class="titBox">
+                                    <h4 class="stit">PLAYERUNKNOWN'S</h4>
+                                    <h3 class="tit">BATTLEGROUNDS</h3>
+                                </div>
+                            </li>
+                            <li class="con">
+                                <div class="imgBox">
+                                    <a href="sublist_console.html"><img src="images/best3.jpg"></a>
+                                </div>
+                                <div class="titBox">
+                                    <h3 class="tit">Grand Theft Auto V</h3>
+                                </div>
+                            </li>
+                            <li class="con">
+                                <div class="imgBox">
+                                    <a href="sublist_console.html"><img src="images/best4.jpg"></a>
+                                </div>
+                                <div class="titBox">
+                                    <h3 class="tit">ARTIFACT</h3>
+                                </div>
+                            </li>
+                            <li class="con">
+                                <div class="imgBox">
+                                    <a href="sublist_console.html"><img src="images/best5.jpg"></a>
+                                </div>
+                                <div class="titBox">
+                                    <h3 class="tit">ARK</h3>
+                                    <h4 class="stit">Survival Evolved</h4>
+                                </div>
+                            </li>
+                            <li class="con">
+                                <div class="imgBox">
+                                    <a href="sublist_console.html"><img src="images/best6.jpg"></a>
+                                </div>
+                                <div class="titBox">
+                                    <h3 class="tit">X4:</h3>
+                                    <h4 class="stit">Foundations</h4>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <p class="tapTit">NEW GAMES</p>
+                    <div class="slideItem">
+                        <ul class="subslider clearfix">
+                            <li class="con">
+                                <div class="imgBox">
+                                    <a href="sublist_console.html"><img src="images/new1.jpg"></a>
+                                </div>
+                                <div class="titBox">
+                                    <h4 class="stit">포켓몬스터</h4>
+                                    <h3 class="tit">레츠고! 피카츄</h3>
+                                </div>
+                            </li>
+                            <li class="con">
+                                <div class="imgBox">
+                                    <a href="sublist_console.html"><img src="images/new2.jpg"></a>
+                                </div>
+                                <div class="titBox">
+                                    <h3 class="tit">ATELIER TOTORI</h3>
+                                    <h4 class="stit">The Adventurer of Arland</h4>
+                                </div>
+                            </li>
+                            <li class="con">
+                                <div class="imgBox">
+                                    <a href="sublist_console.html"><img src="images/new3.jpg"></a>
+                                </div>
+                                <div class="titBox">
+                                    <h3 class="tit">X4:</h3>
+                                    <h4 class="stit">Foundations</h4>
+                                </div>
+                            </li>
+                            <li class="con">
+                                <div class="imgBox">
+                                    <a href="sublist_console.html"><img src="images/new4.jpg"></a>
+                                </div>
+                                <div class="titBox">
+                                    <h3 class="tit">CIVILIZATION VI</h3>
+                                </div>
+                            </li>
+                            <li class="con">
+                                <div class="imgBox">
+                                    <a href="sublist_console.html"><img src="images/new5.jpg"></a>
+                                </div>
+                                <div class="titBox">
+                                    <h3 class="tit">ARTIFACT</h3>
+                                </div>
+                            </li>
+                            <li class="con">
+                                <div class="imgBox">
+                                    <a href="sublist_console.html"><img src="images/new6.jpg"></a>
+                                </div>
+                                <div class="titBox">
+                                    <h3 class="tit">WAR OF RIGHTS</h3>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <p class="tapTit">MD's CHOICE</p>
+                    <div class="slideItem">
+                        <ul class="subslider clearfix">
+                            <li class="con">
+                                <div class="imgBox">
+                                    <a href="sublist_console.html"><img src="images/choice2.jpg"></a>
+                                </div>
+                                <div class="titBox">
+                                    <h3 class="tit">ARK</h3>
+                                    <h4 class="stit">Survival Evolved</h4>
+                                </div>
+                            </li>
+                            <li class="con">
+                                <div class="imgBox">
+                                    <a href="sublist_console.html"><img src="images/choice3.jpg"></a>
+                                </div>
+                                <div class="titBox">
+                                    <h3 class="tit">X4:</h3>
+                                    <h4 class="stit">Foundations</h4>
+                                </div>
+                            </li>
+                            <li class="con">
+                                <div class="imgBox">
+                                    <a href="sublist_console.html"><img src="images/choice1.jpg"></a>
+                                </div>
+                                <div class="titBox">
+                                    <h3 class="tit">ARTIFACT</h3>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    
+    
+    <!-- ------- movie ------- -->
+    <section id="movie">
+        <p class="play" onclick="player()"><img src="images/s1_btn_play.png"></p>
+    </section>
+    
+    
+    <!-- ------- community ------- -->
+    <section id="community">
+    <!-- ------- left(best) ------- -->
+        <div class="left">
+            <h2 class="title">COMMUNITY</h2>
+            <ul class="selectMenu">
+                <li class="active">SCREENSHOT</li>
+                <li>BOARD</li>
+                <li>MARKET</li>
+            </ul>
+            <div class="top">
+                <p class="no1"><img src="images/s1_best.png"></p>
+                <div class="no1Img">
+                    <p class="shot"><img src="images/s_best1.jpg"></p>
+                    <p class="desc">
+                        <a href="uccboard.html">[로아] 로아 님들 이거 알고하심? 사실 아만사제가 ... ( 23 )</a>
+                        <span class="user">렐린님</span>
+                    </p>
+                </div>
+            </div>
+            <div class="bottom">
+                <ul>
+                    <li>
+                        <p class="shot"><img src="images/s_best2.jpg"></p>
+                        <p class="desc">
+                            <a href="uccboard.html">[갓오브워] 진짜 길치됨. 알려... ( 17 )</a>
+                            <span class="user">God길치</span>
+                        </p>
+                    </li>
+                    <li>
+                        <p class="shot"><img src="images/s_best3.jpg"></p>
+                        <p class="desc">
+                            <a href="uccboard.html">[포켓몬] 이슬이 어떻게 이김?  ( 10 )</a>
+                            <span class="user">속초지우</span>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    <!-- ------- right(board) ------- -->
+        <div class="right">
+            <div class="top">
+                <h3 class="tit">게임 스크린샷</h3>
+                <a class="more" href="uccboard.html"><img src="images/s1_btn_more.png"></a>
+                <ul class="list">
+                    <li>
+                        <p class="shot"><img src="images/shot1.jpg"></p>
+                        <p class="stit"><a href="uccboard.html">[로아] 지금 법사 튜토 하...</a></p>
+                        <p class="desc">
+                            <span class="date">2018.12.07</span>
+                            <sapn class="user">호요정</sapn>
+                        </p>
+                    </li>
+                    <li>
+                        <p class="shot"><img src="images/shot2.jpg"></p>
+                        <p class="stit"><a href="uccboard.html">[배그] 저녁에 치킨 시키...</a></p>
+                        <p class="desc">
+                            <span class="date">2018.12.07</span>
+                            <sapn class="user">Guro빈</sapn>
+                        </p>
+                    </li>
+                    <li>
+                        <p class="shot"><img src="images/shot3.jpg"></p>
+                        <p class="stit"><a href="uccboard.html">[로아] 크로마니움 토벌 레...</a></p>
+                        <p class="desc">
+                            <span class="date">2018.12.06</span>
+                            <sapn class="user">찬이해</sapn>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottom">
+                <h3 class="tit">커스터마이징/아이템</h3>
+                <a class="more" href="uccboard.html"><img src="images/s1_btn_more.png"></a>
+                <ul class="list">
+                    <li>
+                        <p class="shot"><img src="images/item1.jpg"></p>
+                        <p class="stit"><a href="uccboard.html">[로아] 기공 커마 자랑</a></p>
+                        <p class="desc">
+                            <span class="date">2018.12.09</span>
+                            <sapn class="user">꼬무룩</sapn>
+                        </p>
+                    </li>
+                    <li>
+                        <p class="shot"><img src="images/item2.jpg"></p>
+                        <p class="stit"><a href="uccboard.html">[로아] 커마 인게임의 괴리...</a></p>
+                        <p class="desc">
+                            <span class="date">2018.12.05</span>
+                            <sapn class="user">렐린님</sapn>
+                        </p>
+                    </li>
+                    <li>
+                        <p class="shot"><img src="images/item3.jpg"></p>
+                        <p class="stit"><a href="uccboard.html">[젤다] 야숨 옷 다 모음</a></p>
+                        <p class="desc">
+                            <span class="date">2018.11.30</span>
+                            <sapn class="user">코나미</sapn>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    
+    <!-- ------- guide ------- -->
+    <section id="guide">
+        <div class="wrapper clearfix">
+    <!-- ------- left(notice) ------- -->
+            <div class="left">
+                <h3 class="tit">공지사항</h3>
+                <p class="moreBtn"><a class="more" href="freeboard.html"><img src="images/s1_btn_more.png"></a></p>
+                <div class="notice1">
+                    <h4 class="no1Tit">[공지] 성탄절 기념, 구매금액별<br>사은품 증정 </h4>
+                    <p class="no1Date">2018.12.06</p>
+                </div>
+                <p class="bar"></p>
+                <ul class="notice">
+                    <li>
+                        <a href="sublist_mobile.html" class="stit">12월 신용카드 무이자 할부...</a>
+                        <span class="date">2018.12.01</span>
+                    </li>
+                    <li>
+                        <a href="sublist_mobile.html" class="stit">[공지] 제3기 결산공고</a>
+                        <span class="date">2018.09.28</span>
+                    </li>
+                    <li>
+                        <a href="sublist_mobile.html" class="stit">[공지] 개인정보 처리방침 ...</a>
+                        <span class="date">2018.07.14</span>
+                    </li>
+                </ul>
+            </div>
+    <!-- ------- center(guide) ------- -->
+            <div class="center">
+                <h3 class="tit">브리더 가이드</h3>
+                <div class="list">
+                    <a href="sublist_mobile.html" class="faq">
+                        <span class="images"><img src="images/guideIcon1.png"></span>
+                        <span class="desc">자주묻는질문</span>
+                    </a>
+                    <a href="sublist_mobile.html" class="mail">
+                        <span class="images"><img src="images/guideIcon2.png"></span>
+                        <span class="desc">1&#58;1 문의</span>
+                    </a>
+                    <a href="sublist_mobile.html" class="map">
+                        <span class="images"><img src="images/guideIcon3.png"></span>
+                        <span class="desc">이용 안내</span>
+                    </a>
+                </div>
+            </div>
+    <!-- ------- right(call center) ------- -->
+            <div class="right">
+                <h3 class="tit">고객센터</h3>
+                <p class="tel">1533 - 5959</p>
+                <p class="bar"></p>
+                <h4 class="stit">운영시간</h4>
+                <p class="week">평일  09:00 ~ 20:00<br>주말  09:00 ~ 17:00</p>
+            </div>
+        </div>
+    </section>
+    
+
+	<!-- ------- footer ------- -->
+	<footer>
+		<ul class="policy">
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">채용안내</a></li>
+                <li><a href="#">윤리경영</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">청소년보호정책</a></li>
+                <li><a href="#">이메일무단수집거부</a></li>
+            </ul>
+            <address class="add">
+                <ul>
+                    <li>(주)브리더</li>
+                    <li>대표이사 고해찬</li>
+                    <li>경기도 의왕시 내손동 637-20</li>
+                    <li>대표전화 : 258-5678</li>
+                    <li>팩스 : 0502-258-5677</li><br>
+                    <li>E-mail : breeder@breeder.co.kr</li>
+                    <li>사업자등록번호 : 220-81-12345호</li>
+                    <li>통신판매업 신고번호 : 제2018-경기의왕-1925호</li>
+                </ul>
+            </address>
+            <p class="copy">&copy; 2018 Breeder Coporation. All Right Reserved.</p>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,566 @@
+section {
+    font-family: 'Exo','Nanum Gothic', sans-serif;
+}
+
+/* ********* visual ********* */
+.visual li{
+    height: 970px;
+    position: relative;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.visual li .tit {
+    font-size: 40px;
+    color: #fff;
+    font-family: 'Exo', sans-serif;
+    font-weight: bold;
+    margin-bottom: 29px;
+}
+
+.visual li .desc {
+    font-size: 17px;
+    color: #fff;
+    font-family: 'Exo','Nanum Gothic', sans-serif;
+    margin-bottom: 83px;
+    line-height: 24px;
+}
+
+.visual li .v_btn a {
+    display: inline-block;
+    width: 260px; height: 64px;
+    box-sizing: border-box;
+    border: 1px solid #fff;
+    color: #fff;
+    font-family: 'Exo', sans-serif;
+    font-size: 17px;
+    line-height: 64px;
+    text-align: center;
+    background-image: url(../images/btn_more.png);
+    background-repeat: no-repeat;
+    background-position: 134px center;
+    transition: all 0.3s;
+}
+
+.visual li .v_btn a:hover {
+    color: #fff;
+    background-color: #007DAB;
+    border-color: #007DAB;
+}
+
+.visual .visual01 {
+    background-image: url(../images/pc_visual1.jpg);
+}
+.visual .visual02 {
+    background-image: url(../images/pc_visual2.jpg);
+}
+.visual .visual03 {
+    background-image: url(../images/pc_visual3.jpg);
+}
+
+.visual li .contant {
+    position:absolute;
+    top:578px;
+    left: 353px;
+}
+
+
+
+/* ********* slideMenu ********* */
+
+#slideMenu {
+    background-color: #fff;
+    font-family: 'Exo','Nanum Gothic', sans-serif;
+    height: 718px;
+    position: relative;
+}
+#slideMenu .wrapper {
+    width: 1467px; height: 718px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding-left: 107px;
+    padding-top: 120px;
+    
+}
+#slideMenu .selectMenu {
+    position: relative;
+    width: inherit; height: inherit;
+    
+}
+#slideMenu .selectMenu li {
+    float: left;
+}
+
+#slideMenu .selectMenu li .tapTit {
+    display: inline-block;
+    height: 40px;
+    margin-left: 107px;
+    color: #aaa;
+    font-size: 25px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+#slideMenu .selectMenu li .line {
+    margin-left: 298px;
+}
+#slideMenu .selectMenu li .tapTit:hover {
+    color: #007DAB;
+}
+#slideMenu .selectMenu li .tapTit.active {
+    color: #007DAB;
+    border-bottom: 2px solid #007DAB;
+}
+#slideMenu .selectMenu .slideItem {
+    position: absolute;
+    left: 0; top: 120px;
+}
+
+#slideMenu .subslider {
+    text-align: center;
+}
+
+#slideMenu .subslider li .titBox {
+    width: 300px; height: 88px;
+    background-color: #fff;
+    position: absolute;
+    bottom:-88px; left: 12px;
+    box-sizing: border-box;
+    padding-top: 35px;
+    transition: all 0.2s;
+}
+
+#slideMenu .subslider li:hover .titBox {
+    bottom:2px;
+}
+
+#slideMenu .subslider li .titBox .tit {
+    margin-bottom: 11px;
+    font-size: 20px;
+}
+
+
+
+/* ********* movie ********* */
+#movie {
+    width: 100%; height: 700px;
+    background-image: url(../images/pc_movie.jpg);
+    text-align: center;
+}
+#movie .play {
+    width: 150px; height: 150px;
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 276px;
+}
+
+
+/* ********* cMovie ********* */
+header .cMovie {
+    width: 100%; height: 100%;
+    position: fixed;
+    top: 0; left: 0;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 9999;
+    
+    display: none;
+}
+header .cMovie video {
+    width: 853px; height: 480px;
+    position: absolute;
+    top: 50%; margin-top: -240px;
+    left: 50%; margin-left: -426px;
+}
+
+header .cMovie .close {
+    position: absolute;
+    top: 80px; right: 80px;
+    cursor: pointer;
+}
+
+
+/* ********* community ********* */
+/* ***** left ***** */
+#community {
+    width: 100%; height: 800px;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding-top: 135px;
+    padding-left: 295px; 
+}
+
+
+#community a, #community .user {
+    color: #555;
+}
+
+#community .left {
+    width: 590px; height: 530px;
+    position: relative;
+    display: inline-block;
+}
+
+#community .left .title {
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+#community .left .selectMenu {
+    width: 210px; height: 20px;
+    position: absolute;
+    right: 0;top:10px;
+}
+#community .left .selectMenu li {
+    display: inline-block;
+    margin-right: 21px;
+    font-size: 12px;
+    color: #aaa;
+    height: 17px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+#community .left .selectMenu li:hover {
+    color: #007DAB;
+}
+
+#community .left .selectMenu li.active {
+    color: #007DAB;
+    border-bottom: 2px solid #007DAB;
+}
+#community .left .selectMenu li:last-child {
+    margin-right: 0;
+}
+
+#community .left .top {
+    width: inherit; height: 308px;
+    position: relative;
+    background-color: #eee;
+    margin-bottom: 5px;
+}
+#community .left .top .no1 {
+    width: 51px; height: 60px;
+    position: absolute;
+    top: 20px; left: 19px;
+}
+#community .left .top .no1Img {
+    width: 491px; height: 276px;
+    position: absolute;
+    top:18px; right: 18px;
+    overflow: hidden;
+    cursor: pointer;
+}
+#community .left .top .no1Img .desc {
+    position: absolute;
+    bottom: -73px; left: 0;
+    width: 491px; height: 73px;
+    background-color: rgba(255,255,255,0.8);
+    line-height: 73px;
+    box-sizing: border-box;
+    padding-left: 24px;
+    transition: all 0.3s;
+}
+#community .left .top .no1Img a:hover {
+    text-decoration: underline;
+}
+
+#community .left .top .user {
+    position: absolute;
+    top: 0; right: 36px;
+}
+#community .left .top .no1Img:hover .desc {
+    bottom:0;
+}
+
+#community .left .bottom {
+    background-color: #eee;
+    text-align: center;
+    height: 172px;
+}
+
+#community .left .bottom li {
+    display: inline-block;
+    width: 266px; height: 150px;
+    margin-top: 10px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+#community .left .bottom li:first-child {
+    margin-right: 20px;
+}
+
+#community .left .bottom li .desc {
+    background-color: rgba(255,255,255,0.8);
+    width: 266px; height: 40px;
+    font-size: 11px;
+    line-height: 40px;
+    box-sizing: border-box;
+    padding-left: 16px;
+    text-align: left;
+    position: absolute;
+    bottom: -40px; left: 0;
+    transition: all 0.3s;
+}
+
+#community .left .bottom li:hover .desc {
+    bottom: 0;
+}
+
+#community .left .bottom li .desc .user {
+    position: absolute;
+    top: 0; right: 16px;
+}
+#community .left .bottom li .desc a:hover {
+    text-decoration: underline;
+}
+
+
+/* ***** right ***** */
+#community .right {
+    width: 650px; height: 530px;
+    display: inline-block;
+    margin-left: 89px;
+    position:absolute;
+}
+
+#community .right .tit {
+    box-sizing: border-box;
+    padding-left: 28px;
+    font-size: 15px;
+}
+
+#community .right .top,
+#community .right .bottom {
+    position: relative;
+    height: 265px;
+    box-sizing : border-box;
+    padding-top: 30px;
+}
+#community .right .more {
+    display: inline-block;
+    position: absolute;
+    top:8px; right: 26px;
+}
+
+#community .right .list {
+    text-align: center;
+    margin-top: 30px;
+}
+#community .right .list li {
+    display: inline-block;
+    margin-right: 32px;
+    width: 166px; height: 160px;
+    box-sizing: border-box;
+    padding-top: 5px;
+    cursor: pointer;
+}
+#community .right .list li:last-child {
+    margin-right: 0;
+}
+
+#community .right .list li .stit {
+    font-size: 12px;
+    text-align: left;
+    width: 166px; height: 40px;
+    line-height: 40px;
+    box-sizing: border-box;
+    padding-left: 15px;
+}
+#community .right .list li .stit a:hover {
+    text-decoration: underline;
+}
+#community .right .list li .desc {
+    font-size: 11px;
+    text-align: left;
+    width: 166px;
+    position: relative;
+    box-sizing: border-box;
+    padding: 0 15px;
+}
+#community .right .list li .desc .user {
+    position: absolute;
+    top:0; left:122px;
+}
+#community .right .list li:hover {
+    background-color: #eee;
+}
+
+
+
+/* ********* guide ********* */
+#guide {
+    height: 700px;
+    text-align: center;
+    font-family: 'Nanum Gothic',sans-serif;
+    box-sizing: border-box;
+}
+#guide .wrapper {
+    width: 1376px;
+    margin: 164px auto 0;
+}
+
+#guide .left {
+    float: left;
+    width: 370px; height: 370px;
+    background-color: #fff;
+    box-sizing: border-box;
+    margin-right: 55px;
+    position: relative;
+    text-align: left;
+}
+
+#guide .tit {
+    color: #007DAB;
+    font-size: 15px;
+    width: 100px;
+    margin: 46px 30px;
+
+}
+
+#guide .left .moreBtn {
+    display: inline-block;
+    position: absolute;
+    top:32px; right: 35px;
+    
+}
+
+#guide .left .moreBtn a {
+    display: inline-block;
+}
+#guide .left .notice1 {
+    width: 309px; height: 114px;
+    margin-left: 32px;
+}
+#guide .left .no1Tit {
+    font-size: 20px;
+    line-height: 35px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+#guide .left .no1Tit:hover {
+    text-decoration: underline;
+}
+#guide .left .no1Date {
+    color: #aaa;
+    font-size: 15px;
+}
+
+#guide .left .bar {
+    width: 309px; height: 1px;
+    background-color: #aaa;
+    margin:0 auto 27px;
+}
+
+#guide .left .notice {
+    width: 309px;
+    margin:0 auto;
+}
+
+#guide .left .notice li {
+    height: 33px;
+    font-size: 14px;
+    color: #aaa;
+}
+#guide .left .notice li .stit {
+    float: left;
+    color: #aaa;
+}
+#guide .left .notice li .stit:hover {
+    text-decoration: underline;
+}
+#guide .left .notice li .date {
+    float: right;
+}
+
+
+#guide .center {
+    float: left;
+    width: 526px; height: 370px;
+    background-color: #fff;
+    box-sizing: border-box;
+    margin-right: 55px;
+    position: relative;
+    text-align: left;
+}
+#guide .center .tit {
+    margin-bottom: 68px;
+}
+
+#guide .center .list {
+    width: 445px; height: 170px;
+    margin: 0 auto;
+}
+
+#guide .center .list a {
+    display: inline-block;
+    width: 116px;
+    text-align: center;
+    margin-right: 43px;
+}
+#guide .center .list a:last-child {
+    margin-right: 0;
+}
+#guide .center .list .images {
+    display: inline-block;
+    width: 116px; height: 116px;
+    border-radius: 50%;
+    background-color: #999;
+    box-sizing: border-box;
+    line-height: 92px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+#guide .center .list .mail .images {
+    line-height: 84px;
+}
+#guide .center .list .map .images {
+    line-height: 87px;
+}
+#guide .center .list .desc {
+    color: #aaa;
+    font-size: 14px;
+}
+#guide .center .list a:hover .images {
+    background-color: #007DAB;
+}
+#guide .center .list a:hover .desc {
+    color:#007DAB;
+}
+
+#guide .right {
+    float: left;
+    width: 370px; height: 370px;
+    background-color: #fff;
+    box-sizing: border-box;
+    position: relative;
+}
+
+#guide .right .tit {
+    text-align: left;
+}
+
+#guide .right .bar {
+    width: 309px; height: 1px;
+    margin: 27px auto 33px;
+    background-color: #aaa;
+}
+
+#guide .right .tel {
+    font-size: 40px;
+    color: #007DAB;
+}
+
+#guide .right .stit {
+    color: #aaa;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+#guide .right .week {
+    color: #aaa;
+    font-size: 12px;
+    line-height: 30px;
+    
+}
+
+

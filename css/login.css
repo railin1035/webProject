@@ -1,0 +1,148 @@
+/** reset **/
+
+html, body, span, h1, p, a, address, img, ul, li,
+form, footer, header, section {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+footer, header, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ul {
+	list-style: none;
+}
+a { text-decoration: none; }
+img { vertical-align: bottom; }
+
+/* float 부모 높이 설정 */
+.clearfix::after { content:''; display:block; clear:both;}
+
+
+
+body {
+    background-color:#efefef;
+}
+
+/***** header *****/
+header h1 {
+    text-align: center;
+    margin: 100px 0 80px;
+}
+
+
+/***** loginForm *****/
+.loginForm {
+    height: 240px;
+    text-align: center;
+}
+.loginForm p {
+    margin: 0 auto;
+    width: 410px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.loginForm .pass {
+    margin: 20px auto 50px;
+}
+
+.loginForm .login_stit {
+    display: inline-block;
+    width: 100px;
+    text-align: left;
+    font-size: 20px;
+    color: #797979;
+}
+
+.loginForm #userid,#password {
+    width: 300px;
+    height: 30px;
+    font-size: 15px;
+}
+.loginForm #submit {
+    border:none;
+    background-color: #007DAB;
+    color: #fff;
+    font-size: 30px;
+    width: 410px; height: 70px;
+    cursor: pointer;
+}
+
+.find {
+    height: 60px; 
+    text-align: center;
+}
+.find a {
+    color: #797979;
+    font-size: 14px;
+}
+.find a:first-child {
+    padding-right: 10px;
+    border-right: 1px solid #797979;
+    margin-right: 8px;
+}
+.find a:hover {
+    text-decoration: underline;
+}
+
+/***** footer *****/
+footer {
+	width: 100%; height: 266px;
+	background-color: #000000;
+	box-sizing: border-box;
+	padding-top: 47px;
+	margin: 0 auto;
+	text-align: center;
+	color: #ffffff;
+    position : absolute;
+    bottom: 0;
+}
+
+footer .policy {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+footer .policy li {
+	display: inline-block;
+	padding: 0 17px;
+	background-image: url(../images/footer_bar.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+footer .policy li:last-child {
+	background-image : none;
+    padding-right: 0;
+}
+
+footer .policy li a {
+	color: #ffffff;
+}
+
+footer .policy li a:hover {
+	text-decoration: underline;
+}
+
+footer .add {
+	text-align: center;
+	margin-bottom: 26px;
+	font-size: 14px;
+}
+
+footer .add li {
+	display: inline-block;
+	height: 36px;
+	line-height: 100%;
+	margin-right: 24px;
+}
+
+footer .copy {
+	font-size: 14px;
+}

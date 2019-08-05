@@ -1,0 +1,176 @@
+/** reset **/
+
+html, body, span, h1, p, a, address, img, ul, li,
+form, footer, header, section {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+footer, header, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ul {
+	list-style: none;
+}
+a { text-decoration: none; }
+img { vertical-align: bottom; }
+
+/* float 부모 높이 설정 */
+.clearfix::after { content:''; display:block; clear:both;}
+
+
+
+
+
+body {
+    background-color:#efefef;
+}
+
+
+/***** header *****/
+header h1 {
+    text-align: center;
+    margin: 100px 0 50px;
+}
+
+
+/***** joinForm *****/
+.joinForm {
+    text-align: center;
+    height: 800px;
+}
+
+.joinForm .red {
+    color: red;
+}
+.joinForm .tit {
+    padding: 10px 0;
+    color: #9F9FA0;
+    font-size: 20px;
+}
+.joinForm .desc {
+    font-size: 12px;
+    color: red;
+    margin-bottom: 20px;
+}
+
+.joinForm #theForm {
+    display: inline-block;
+    width: 300px;
+    font-size: 14px;
+}
+.joinForm div {
+    margin-bottom: 10px;
+    width: 300px;
+}
+.joinForm .form_tit {
+    display: inline-block;
+    margin-bottom: 10px;
+    width: 250px;
+}
+.joinForm .gen .box{
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 5px;
+    font-size: 12px;
+    background-color: #fff;
+}
+.joinForm .box {
+    width: 250px; height: 30px;
+    box-sizing: border-box;
+    border: 1px solid #b1b1b1;
+}
+
+.joinForm #birth #year,select {
+    width: 50px;
+    background-color: #f4f4f4;
+    border: 0.5px solid #b1b1b1;
+    color: #666;
+}
+
+.joinForm #phone input {
+    width: 50px;
+    box-sizing: border-box;
+    border: 0.5px solid #b1b1b1; 
+    background-color: #f4f4f4;
+    color: #666;
+}
+
+.joinForm .box1 {
+    display: inline-block;
+    width: 250px; height: 30px;
+    box-sizing: border-box;
+    padding: 5px;
+    border: 1px solid #b1b1b1;
+    font-size: 12px;
+    background-color: #fff;
+}
+
+.joinForm #submit {
+    border: none;
+    background-color: #007DAB;
+    color: #fff;
+    font-size: 17px;
+    width: 250px; height: 40px;
+    cursor: pointer;
+}
+
+
+/***** footer *****/
+footer {
+	width: 100%; height: 266px;
+	background-color: #000000;
+	box-sizing: border-box;
+	padding-top: 47px;
+	margin: 0 auto;
+	text-align: center;
+	color: #ffffff;
+}
+
+footer .policy {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+footer .policy li {
+	display: inline-block;
+	padding: 0 17px;
+	background-image: url(../images/footer_bar.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+footer .policy li:last-child {
+	background-image : none;
+    padding-right: 0;
+}
+
+footer .policy li a {
+	color: #ffffff;
+}
+
+footer .policy li a:hover {
+	text-decoration: underline;
+}
+
+footer .add {
+	text-align: center;
+	margin-bottom: 26px;
+	font-size: 14px;
+}
+
+footer .add li {
+	display: inline-block;
+	height: 36px;
+	line-height: 100%;
+	margin-right: 24px;
+}
+
+footer .copy {
+	font-size: 14px;
+}

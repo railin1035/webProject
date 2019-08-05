@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BREEDER</title>
+    <link href="https://fonts.googleapis.com/css?family=Exo:200,400,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/mo_sub1.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    
+    <script src="js/common.js"></script>
+    <script src="js/pc_sub2.js"></script>
+
+</head>
+<body>
+    <!-- ------- header ------- -->
+    <header>
+        <h1 class="logo"><a href="index.html"><img src="images/logo.png" alt="logo"></a></h1>
+        <div id="s_bar">
+            <from id="searchFrom" name="searchForm" method="get" action="">
+                <p class="s_box">
+                    <input type="text" id="search" maxlength="30" name="search">
+                </p>
+                <p class="b_box">   
+                    <input type="submit" value="" id="go" onclick="searching()">
+                </p>
+            </from>
+        </div>
+        <nav>
+            <p class="hamb" onclick="view(this)">
+                <img src="images/hamburger.png">
+            </p>
+            <ul class="lnb clearfix">
+                <li><a href="login.html" target="_blank">로그인</a></li>
+                <li><a href="join.html" target="_blank">회원가입</a></li>
+                <li><a href="cart.html" target="_blank">장바구니</a></li>
+            </ul>
+            <ul class="gnb">
+                <li><a href="con_main.html">콘솔게임</a></li>
+                <li><a href="pc_main.html">PC게임</a></li>
+                <li><a href="#">모바일게임</a></li>
+                <li><a href="freeboard.html">커뮤니티</a></li>
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">게임뉴스</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    
+    <!-- ------- simple(제목, 사진, 간단설명) ------- -->
+    <section id="simple">
+        <div class="wrapper">
+            <div class="title">
+                <h2 class="Mtit">서머너즈워</h2>
+            </div>
+            <div class="desc clearfix">
+                <div class="left">
+                    <div class="top">
+                        <img src="images/sub_mo1.jpg">
+                    </div>
+                    <div class="bottom">
+                        <img src="images/sub_mo2.jpg" alt="img1">
+                        <img src="images/sub_mo3.jpg" alt="img2">
+                        <img src="images/sub_mo4.jpg" alt="img3">
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="box"> 
+                        <h3 class="stit">서머너즈워</h3>
+                        <ul class="list">
+                            <li>
+                                <p class="sDesc">가격</p>
+                                <p class="data">무료</p>
+                            </li>
+                            <li>
+                                <p class="sDesc">장르</p>
+                                <p class="data">롤플레잉</p>
+                            </li>
+                            <li>
+                                <p class="sDesc">퍼블리셔</p>
+                                <p class="data">컴투스</p>
+                            </li>
+                            <li>
+                                <p class="sDesc">이용등급</p>
+                                <p class="data">12세</p>
+                            </li>
+                        </ul>
+                        <div class="cart">
+                            <p>
+                                장바구니 담기
+                            </p>
+                        </div>
+                        <div class="buy"> 
+                            <p>
+                                홈페이지 이동
+                            </p>
+                        </div>
+                        <div class="heart"> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="detail">
+        <div class="wrapper">
+            <div class="top">
+                <nav id="tab">
+                    <ul class="clearfix">
+                        <li><a href="#" class="active">상세설명</a></li>
+                        <li><a href="#">커뮤니티</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">주의사항</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>      
+
+        <div class="wrapper">
+            <div class="wrap">
+                <div class="over1">
+                    <h3 class="tit">video</h3>
+                    <div class="ttop"> </div>
+                    <div class="toright1"> </div>
+                    <div class="toright2"> </div>
+                    <div class="toright3"> </div>
+                </div>
+
+                <div class="over2">
+                    <h3 class="tit">explanation</h3>
+                    <div class="expl">
+                        <p class="desc">
+                        1000여종의 다양한 몬스터들과 함께하는 전략적 육성!<br>
+                        시나리오, 던전, PvP, 길드전, 보스레이드까지 무궁무진한 컨텐츠!<br>
+                        끝없는 전투가 펼쳐지는 천공의 아레나에 소환사님을 초대합니다.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="over3">
+                    <h3 class="tit">System specification</h3>
+                    <div class="system">
+                        <div class="sys1">필수적 접근권한</div>
+                        <div class="sys2">선택적 접근권한</div>
+                        <div class="sys3">
+                        <p>
+                            없음 
+                        </p>
+                        </div>
+                        <div class="sys4">
+                            <p>
+                                저장공간<br>
+                                하이브 회원을 위한 프로필 이미지 변경 및 <br>
+                                게임 화면 저장/불러오기 등을 위해 사용<br><br>
+                                단말기 정보<br>
+                                게임 내 이벤트 진행 및 보상을 위해 사용<br><br>
+                                주소록 <br>
+                                하이브 회원을 위한 친구리스트 동기화 이용 시 사용<br><br>
+                                마이크: <br>
+                                음성 기능을 사용하기 위한 권한<br><br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="over4">
+                    <h3 class="tit">language</h3>
+                    <div class="lang">
+                        <p>
+                            언어<br>
+                            한국어
+                        </p>
+                    </div>
+                </div>
+
+                <div class="over5">
+                    <h3 class="tit">company/Official site</h3>
+                    <div class="comp">
+                        <p>
+                            제작사<br>
+                            컴투스<br><br>
+                            공식<br>
+                            공식카페 페이스북
+                        </p>
+                    </div>
+                </div>
+
+                <div class="over6">
+                    <h3 class="tit">Recommended product</h3>
+                    <div class="recom1"> </div>
+                    <div class="recom2"> </div>
+                    <div class="recom3"> </div>
+                    <div class="recom4"> </div>
+                    <div class="recom5"> </div>
+                    <div class="recom6"> </div>
+                    <div class="recom7"> </div>
+                    <div class="recom8"> </div>
+                </div>
+
+                </div>
+            </div>
+        </section>
+
+        
+    <!-- ------- footer ------- -->
+
+	<footer>
+		<ul class="policy">
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">채용안내</a></li>
+                <li><a href="#">윤리경영</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">청소년보호정책</a></li>
+                <li><a href="#">이메일무단수집거부</a></li>
+            </ul>
+            <address class="add">
+                <ul>
+                    <li>(주)브리더</li>
+                    <li>대표이사 고해찬</li>
+                    <li>경기도 의왕시 내손동 637-20</li>
+                    <li>대표전화 : 258-5678</li>
+                    <li>팩스 : 0502-258-5677</li><br>
+                    <li>E-mail : breeder@breeder.co.kr</li>
+                    <li>사업자등록번호 : 220-81-12345호</li>
+                    <li>통신판매업 신고번호 : 제2018-경기의왕-1925호</li>
+                </ul>
+            </address>
+            <p class="copy">&copy; 2018 Breeder Coporation. All Right Reserved.</p>
+	</footer>
+
+</body>
+</html>

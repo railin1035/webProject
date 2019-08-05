@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BREEDER</title>
+    <link href="https://fonts.googleapis.com/css?family=Exo:200,400,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/intro.css">
+    <script src="js/common.js"></script>
+
+</head>
+<body>
+    <!-- ------- header ------- -->
+	<header>
+		<h1 class="logo"><a href="intro.html"><img src="images/logo.png" alt="logo"></a></h1>
+		<div id="s_bar">
+            <from id="searchFrom" name="searchForm" method="get" action="">
+                <p class="s_box">
+                    <input type="text" id="search" maxlength="30" name="search">
+                </p>
+                <p class="b_box">   
+                    <input type="submit" value="" id="go" onclick="searching()">
+                </p>
+            </from>
+        </div>
+		<nav>
+            <p class="hamb" onclick="view(this)">
+                <img src="images/hamburger.png">
+            </p>
+			<ul class="lnb clearfix">
+				<li><a href="login.html" target="_blank">로그인</a></li>
+				<li><a href="join.html" target="_blank">회원가입</a></li>
+				<li><a href="cart.html" target="_blank">장바구니</a></li>
+			</ul>
+			<ul class="gnb">
+				<li><a href="con_main.html">콘솔게임</a></li>
+				<li><a href="pc_main.html">PC게임</a></li>
+				<li><a href="#">모바일게임</a></li>
+				<li><a href="freeboard.html">커뮤니티</a></li>
+				<li><a href="#">공지사항</a></li>
+				<li><a href="#">게임뉴스</a></li>
+			</ul>
+		</nav>
+	</header>
+
+    
+    <!-- ------- section ------- -->
+    <!-- 화면 3분할, 장르별 서브페이지로 이동 -->
+	<section class="clearfix">
+		<div class="m_co">
+			<a href="con_main.html">
+				<p class="tit">콘솔게임</p>
+				<p class="s_tit">CONSOLE GAMES</p>
+			</a>
+		</div>
+		<div class="m_pc">
+			<a href="pc_main.html">
+				<p class="tit">PC게임</p>
+				<p class="s_tit">PC GAMES</p>
+			</a>
+		</div>
+		<div class="m_mo">
+			<a href="#">
+				<p class="tit">모바일게임</p>
+				<p class="s_tit">MOBILE GAMES</p>
+			</a>
+		</div>
+	</section>
+    
+    <!-- ------- footer ------- -->
+	<footer>
+		<ul class="policy">
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">채용안내</a></li>
+                <li><a href="#">윤리경영</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">청소년보호정책</a></li>
+                <li><a href="#">이메일무단수집거부</a></li>
+            </ul>
+            <address class="add">
+                <ul>
+                    <li>(주)브리더</li>
+                    <li>대표이사 고해찬</li>
+                    <li>경기도 의왕시 내손동 637-20</li>
+                    <li>대표전화 : 258-5678</li>
+                    <li>팩스 : 0502-258-5677</li><br>
+                    <li>E-mail : breeder@breeder.co.kr</li>
+                    <li>사업자등록번호 : 220-81-12345호</li>
+                    <li>통신판매업 신고번호 : 제2018-경기의왕-1925호</li>
+                </ul>
+            </address>
+            <p class="copy">&copy; 2018 Breeder Coporation. All Right Reserved.</p>
+	</footer>
+</body>
+</html>

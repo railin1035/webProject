@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+        <meta charset="utf-8" />
+        <title>Breeder:Cart</title>
+        <link href="https://fonts.googleapis.com/css?family=Exo:200,400,800" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="css/common.css">
+        <link rel="stylesheet" type="text/css" href="css/cart.css">
+        
+        <script src="js/cart.js"></script>
+
+	</head>
+	<body>
+        <!-- ---------- cartHeader ---------- -->
+        <section id="cartHeader">
+            <h2 class="cLogo"><img src="images/cartLogo.png"></h2>
+            <h3 class="cartTit">장바구니</h3>
+            <p class="collect">전체</p>
+        </section>
+        
+        <!-- ---------- selectItem ---------- -->
+        <section id="selectItem">
+            <div class="wrapper clearfix">
+                <div class="allSelect">
+                    <form id="selectForm" name="selectForm" method="get" action="" >
+                        <p class="allTit">전체선택</p>
+                        <input type="checkbox" checked id="checkAll"> 
+                    </form>
+                </div>
+                <div class="left">
+                    <form id="choiceForm" name="choiceForm" method="get" action="">
+                        <input type="checkbox" checked id="check1">
+                        <p class="itemTitle">포켓몬스터 레츠고! 이브이</p>
+                    </form>
+                    <p class="titBar"></p>
+                    <div class="item1">
+                        <p class="itemImg"><img src="images/cartImg.jpg"></p>
+                        <p class="itemName">포켓몬스터 레츠고! 이브이</p>
+                        <div class="peace">
+                            <p class="minus" onclick="minus()"></p>
+                            <p id="number">1</p>
+                            <p class="plus" onclick="plus()"></p>
+                        </div>
+                        <p class="itemTotal">64,000원</p>
+                        <p class="delete"></p>
+                    </div>
+                    
+                    <div class="acu">
+                        <ul>
+                            <li class="outprice">
+                                <p class="priceTit">상품금액</p>
+                                <p class="price">64,000원</p>
+                            </li>
+                            <li class="saleprice">
+                                <p class="priceTit">할인금액</p>
+                                <p class="price">4,000원</p>
+                            </li>
+                            <li class="totalprice">
+                                <p class="priceTit">결재금액</p>
+                                <p class="price">60,000원</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="right">
+                    <p class="itemTitle">전체합계</p>
+                    <p class="titBar"></p>
+                    <p class="productDesc clearfix">
+                        <span class="proTit">상품수</span>
+                        <span class="proNum">1개</span>
+                    </p>
+                    <p class="productDesc clearfix">
+                        <span class="proTit">상품금액</span>
+                        <span class="proNum">64,000원</span>
+                    </p>
+                    <p class="productDesc clearfix">
+                        <span class="proTit">할인금액</span>
+                        <span class="proNum">4,000원</span>
+                    </p>
+                    <p class="totalBar"></p>
+                    <p class="totalDesc clearfix">
+                        <span class="toTit">전체주문금액</span>
+                        <span class="toNum">60,000원</span>
+                    </p>
+                    <p class="orderBtn">주문하기</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- ---------- footer ---------- -->
+        <footer>
+		  <ul class="policy">
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">채용안내</a></li>
+                <li><a href="#">윤리경영</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">청소년보호정책</a></li>
+                <li><a href="#">이메일무단수집거부</a></li>
+            </ul>
+            <address class="add">
+                <ul>
+                    <li>(주)브리더</li>
+                    <li>대표이사 고해찬</li>
+                    <li>경기도 의왕시 내손동 637-20</li>
+                    <li>대표전화 : 258-5678</li>
+                    <li>팩스 : 0502-258-5677</li><br>
+                    <li>E-mail : breeder@breeder.co.kr</li>
+                    <li>사업자등록번호 : 220-81-12345호</li>
+                    <li>통신판매업 신고번호 : 제2018-경기의왕-1925호</li>
+                </ul>
+            </address>
+            <p class="copy">&copy; 2018 Breeder Coporation. All Right Reserved.</p>
+	   </footer>
+	</body>
+</html>

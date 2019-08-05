@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Breeder:Join us</title>
+	<link rel="stylesheet" type="text/css" href="css/join.css">
+	<script src="js/join.js"></script>
+</head>
+<body>
+    <header>
+        <h1><img src="images/loginLogo.png"></h1>
+    </header>
+    <section class="joinForm">
+        <h2 class="tit">회원 정보</h2>
+        <p class="desc">*는 필수입력사항입니다.</p>
+        <form id="theForm" name="theForm" method="get" action="">
+            <div>
+                <p class="form_tit">아이디<span class="red">*</span></p>
+                <p>
+                    <input type="text" id="userId" class="box" name="userId">
+                </p>
+            </div>
+            <div>
+                <p class="form_tit">비밀번호<span class="red">*</span></p>
+                <p>
+                    <input type="password" id="pw1" class="box" name="pw1">
+                </p>
+            </div>
+            <div>
+                <p class="form_tit">비밀번호 재확인<span class="red">*</span></p>
+                <p>
+                    <input type="password" id="pw2" class="box" name="pw2">
+                </p>
+                <p id="pwError"></p>
+            </div>
+            <div>
+                <p class="form_tit">이름<span class="red">*</span></p>
+                <p>
+                    <input type="text" id="userName" class="box" name="userName">
+                </p>
+            </div>
+            <div>
+                <p class="form_tit">생년월일<span class="red">*</span></p>
+                <p id="birth" class="box1">
+                    <input type="text" maxlength="4" id="year" name="year" value="2018">
+                    년&nbsp;
+                    <select name="month" id="month">
+                        <option value="1" selected>1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                    월&nbsp;
+                    <select name="day" id="day">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                    </select>
+                    일
+                </p>
+            </div>
+            <div class="gen">
+                <p class="form_tit">성별</p>
+                <p class="box">
+                    <input type="radio" name="gender" value="m">남성
+                    &nbsp;&nbsp;
+                    <input type="radio" name="gender" value="f">여성
+                </p>
+            </div>
+            <div>
+                <p class="form_tit">휴대전화<span class="red">*</span></p>
+                <p id="phone" class="box1">
+                    <input type="text" id="ph1" name="ph1" maxlength="3" value="010"> - 
+                    <input type="text" id="ph2" name="ph2" maxlength="4"> - 
+                    <input type="text" id="ph3" name="ph3" maxlength="4">
+                </p>
+            </div>
+            <div>
+                <p class="form_tit">이메일<span class="red">*</span></p>
+                <p>
+                    <input type="text" id="email" class="box"  name="email">
+                </p>
+            </div>
+            <div>
+                <p class="form_tit">&nbsp;</p>
+                <p>
+                    <input type="button" value="회원가입" id="submit" onclick="checkData()">
+                </p>
+            </div>
+        </form>
+    </section>
+    
+    	<footer>
+		<ul class="policy">
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">채용안내</a></li>
+                <li><a href="#">윤리경영</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">청소년보호정책</a></li>
+                <li><a href="#">이메일무단수집거부</a></li>
+            </ul>
+            <address class="add">
+                <ul>
+                    <li>(주)브리더</li>
+                    <li>대표이사 고해찬</li>
+                    <li>경기도 의왕시 내손동 637-20</li>
+                    <li>대표전화 : 258-5678</li>
+                    <li>팩스 : 0502-258-5677</li><br>
+                    <li>E-mail : breeder@breeder.co.kr</li>
+                    <li>사업자등록번호 : 220-81-12345호</li>
+                    <li>통신판매업 신고번호 : 제2018-경기의왕-1925호</li>
+                </ul>
+            </address>
+            <p class="copy">&copy; 2018 Breeder Coporation. All Right Reserved.</p>
+	</footer>
+
+</body>
+</html>

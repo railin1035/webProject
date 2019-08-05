@@ -1,0 +1,246 @@
+/* ***** cartHeader ***** */
+#cartHeader {
+    width: 100%; height: 235px;
+    background-color: #fff;
+    position: relative;
+    box-sizing: border-box;
+    padding-left: 215px;
+}
+
+#cartHeader .cLogo {
+    text-align: right;
+    height: 80px;
+    box-sizing: border-box;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+
+#cartHeader .cartTit {
+    margin-bottom: 60px;
+    width: 185px;
+    color: #000;
+    font-size: 48px;
+}
+
+#cartHeader .collect {
+    color: #FFB741;
+    font-size: 24px;
+}
+
+
+/* ***** selectItem ***** */
+#selectItem {
+    width: 100%; height: 800px;
+}
+#selectItem .wrapper {
+    width: 1500px; height: inherit;
+    margin: 0 auto;
+    position: relative;
+    box-sizing: border-box;
+    padding-top: 88px;
+}
+
+#selectItem .allSelect {
+    width: 90px; height: 25px;
+    color: #007DAB;
+    font-size: 15px;
+    margin-left: 19px;
+    margin-bottom: 10px;
+}
+#selectItem .allSelect .allTit {
+    display: inline-block;
+    position: relative;
+    top: -3px;
+}
+#selectItem .allSelect input {
+    width: 16px; height: 16px;
+    border: none;
+}
+
+/* ****** left ****** */
+#selectItem .left {
+    width: 1033px; height: 324px;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding-top : 27px;
+    padding-left: 34px;
+    position: relative;
+    float: left;
+    font-family: 'Nanum Gothic';
+}
+#selectItem .left form {
+    margin-bottom: 10px;
+}
+#selectItem .left input {
+    width: 15px; height: 15px;
+    margin-right: 18px;
+}
+#selectItem .itemTitle {
+    display: inline-block;
+    font-size: 20px;
+}
+
+#selectItem .titBar {
+    width: 960px; height: 1px;
+    background-color: #666;
+}
+
+#selectItem .left .item1 {
+    width: 960px; height: 160px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+#selectItem .left .item1 p,
+#selectItem .left .item1 .peace {
+    position:absolute;
+    top:26px;
+}
+
+#selectItem .left .item1 .itemImg {left: 45px; top: 13px;}
+#selectItem .left .item1 .itemName {
+    font-size: 18px;
+    left: 152px;
+}
+#selectItem .left .item1 .peace {
+    left: 516px; height: 25px;
+}
+#selectItem .left .item1 .peace p {
+    position: relative;
+    display: inline-block;
+    background-color: #eee;
+}
+#selectItem .left .item1 .minus,
+#selectItem .left .item1 .plus {
+    width: 25px; height: 25px;
+    border-radius: 50%;
+    top: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#selectItem .left .item1 .minus:active,
+#selectItem .left .item1 .plus:active {
+    background-color: #aaa;
+}
+#selectItem .left .item1 .minus {
+    background-image: url(../images/cartMinus.png);
+}
+#selectItem .left .item1 .plus {
+    background-image: url(../images/cartPlus.png);
+}
+#selectItem .left .item1 #number {
+    width: 40px; height: 25px;
+    top:-8px;
+    line-height: 25px;
+    text-align: center;
+    margin: 0 5px;
+}
+
+#selectItem .left .item1 .itemTotal {
+    font-size: 18px;
+    right: 70px;
+}
+#selectItem .left .item1 .delete {
+    width: 18px; height: 18px;
+    background-image: url(../images/cart_delete.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    right: 35px;
+    cursor: pointer;
+}
+#selectItem .left .acu {
+    background-color: #d6d6d6;
+    position: absolute;
+    left: 0; bottom: 0;
+    width: 1033px; height: 98px;
+    box-sizing: border-box;
+    padding-left: 133px;
+}
+#selectItem .left .acu li{
+    display: inline-block;
+    height: 98px; padding-right: 144px;
+    margin-left: 107px;    
+}
+#selectItem .left .acu li:first-child {
+    background-image: url(../images/cartmin.png);
+    background-repeat: no-repeat;
+    background-position: center right;
+    margin-left: 0;
+}
+#selectItem .left .acu li:nth-child(2) {
+    background-image: url(../images/cartEq.png);
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+#selectItem .left .acu li:last-child {
+    padding-right: 0;
+}
+#selectItem .left .acu li .priceTit {
+    color: #007DAB;
+    font-size: 16px;
+    height: 30px;
+    margin-top: 24px;
+}
+
+#selectItem .left .acu li .price {
+    font-size: 22px;
+}
+
+
+#selectItem .right {
+    width: 447px; height: 490px;
+    float: right;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding-top : 27px;
+    padding-left: 25px;
+}
+
+#selectItem .right .titBar {
+    width: 400px;
+    margin: 10px 0 55px;
+}
+
+#selectItem .right .productDesc {
+    width: 368px; height: 46px;
+    font-size: 16px;
+    margin-left: 15px;
+    
+}
+
+#selectItem .right .proTit {
+    float: left;
+}
+#selectItem .right .proNum {
+    float: right;
+}
+
+#selectItem .right .totalBar {
+    width: 400px; height: 1px;
+    background-color: #666;
+    margin: 15px 0 34px;
+}
+#selectItem .right .totalDesc {
+    width: 368px; height: 69px;
+    font-size: 16px;
+    margin-left: 15px;
+}
+#selectItem .right .totalDesc .toTit {
+    font-size: 20px;
+    line-height: 28px;
+    float: left;
+}
+#selectItem .right .totalDesc .toNum {
+    font-size: 28px;
+    float: right;
+}
+
+#selectItem .right .orderBtn {
+    width: 393px; height: 83px;
+    background-color: #007DAB;
+    line-height: 83px;
+    text-align: center;
+    font-size: 28px;
+    color: #fff;
+    cursor: pointer;
+}

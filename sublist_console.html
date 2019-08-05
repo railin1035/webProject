@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Exo:200,400,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/console_list.css">
+
+    <script src="js/common.js"></script>
+</head>
+<body>
+    <!-- ------- header ------- -->
+    <header>
+        <h1 class="logo"><a href="index.html"><img src="images/logo.png" alt="logo"></a></h1>
+        <div id="s_bar">
+            <from id="searchFrom" name="searchForm" method="get" action="">
+                <p class="s_box">
+                    <input type="text" id="search" maxlength="30" name="search">
+                </p>
+                <p class="b_box">   
+                    <input type="submit" value="" id="go" onclick="searching()">
+                </p>
+            </from>
+        </div>
+        <nav>
+            <p class="hamb" onclick="view(this)">
+                <img src="images/hamburger.png">
+            </p>
+            <ul class="lnb clearfix">
+                <li><a href="login.html" target="_blank">로그인</a></li>
+                <li><a href="join.html" target="_blank">회원가입</a></li>
+                <li><a href="cart.html" target="_blank">장바구니</a></li>
+            </ul>
+            <ul class="gnb">
+                <li><a href="con_main.html">콘솔게임</a></li>
+                <li><a href="pc_main.html">PC게임</a></li>
+                <li><a href="#">모바일게임</a></li>
+                <li><a href="freeboard.html">커뮤니티</a></li>
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">게임뉴스</a></li>
+            </ul>
+        </nav>
+    </header>
+	
+	<section class="c_best">
+		<div class="c_best1" >
+			<a href="co_sub1.html">
+				<img src="images/zellda.jpg"><br>
+				<p>젤다의 전설 : 야생의 숨결</p>
+				<a class="pricebest" href="#">61,000￦</a>
+			</a>
+		</div>
+		<div class="c_best2">
+			<a href="co_sub1.html"> 
+				<img src="images/odisay.jpg"><br>
+				<p>슈퍼 마리오 : 오디세이</p>
+				<a class="pricebest" href="#">53,000￦</a>
+			</a>
+		</div>
+	</section>
+
+	<article class="c_new">
+		<span style="position:absolute ;left:210px; top:578px;">
+		&nbsp;NEW GAME</span> 
+		<div class="c_new1">
+			<a href="co_sub1.html">
+				<img src="images/cuby.jpg"><br>
+				<p>별의 커비 : 스타 얼라이즈</p>
+				<a class="price" href="#">40,000￦</a>
+			</a>
+		</div>
+		<div class="c_new2">
+			<a href="co_sub1.html"> 
+				<img src="images/pacho.jpg"><br>
+				<p>사이쿄 컬렉션</p>
+				<a class="price" href="#">30,000￦</a>
+			</a>
+		</div>
+		<div class="c_new3">
+			<a href="co_sub1.html"> 
+				<img src="images/calloub.jpg"><br>
+				<p style="padding-top:4px">콜오브 듀티 : <br>모던 워페어 리마스터</p>
+				<a class="price" href="#">37,000￦</a>
+			</a>
+		</div>
+	</article>
+	<article class="c_sale">
+		<span style="position:absolute ;left:210px; top:1013px;">&nbsp;SALE GAME</span>
+		<div class="c_sale1">
+			<a href="co_sub1.html"> 
+				<img src="images/battle1.jpg"><br>
+				<p>배틀필드 1</p>
+				<a class="price" href="#">20,000￦</a>
+			</a>
+		</div>
+		<div class="c_sale2">
+			<a href="co_sub1.html"> 
+				<img src="images/horaizn.jpg"><br>
+				<p>호라이즌 제로 던</p>
+				<a class="price" href="#">63,000￦</a>
+			</a>
+		</div>
+		<div class="c_sale3">
+			<a href="co_sub1.html"> 
+				<img src="images/trans.jpg"><br>
+				<p>트랜스퍼런스</p>
+				<a class="price" href="#">30,000￦</a>
+			</a>
+		</div>
+	</article>
+	<article class="c_dlc">
+		<span style="position:absolute ;left:210px; top:1448px;">&nbsp;NEW RELEASES</span>
+		<div class="c_dlc1">
+			<a href="co_sub1.html"> 
+				<img src="images/tetris.jpg"><br>
+				<p>테트리스 이펙트</p>
+				<a class="price" href="#">15,000￦</a>
+			</a>
+		</div>
+		<div class="c_dlc2">
+			<a href="co_sub1.html"> 
+				<img src="images/zingu2.jpg"><br>
+				<p>진격의 거인2</p>
+				<a class="price" href="#">25,000￦</a>
+			</a>
+		</div>
+		<div class="c_dlc3">
+			<a href="co_sub1.html"> 
+				<img src="images/mario8.jpg"><br>
+				<p>마리오카트 : 디럭스8</p>
+				<a class="price" href="#">50,000￦</a>
+			</a>
+		</div>
+	</article>
+	<aside class="rank">
+		<ul>
+		<li class="rankbutton">PC</li>
+		<li class="rankbutton">Console</li>
+		<li class="rankbutton">Mobile</li><br>
+		<li class="rank1"><img src="images/top1.png">
+			<p>서머너즈워 : 천공의 아레나</p></li><br>
+		<li class="rank1"><img src="images/top2.png">
+			<p>위 베어 베어스 더 퍼즐</p></li><br>
+		<li class="rank1"><img src="images/top3.png">
+			<p>블레이드 & 소울 : 레볼루션</p></li><br>
+		<li class="setreft">TOP 4
+		<p>모두의마블</p></li><br>
+		<li class="setreft">TOP 5
+		<p>에픽세븐</p></li><br>
+		<li class="setreft">TOP 6
+		<p>라그라노크 M</p></li><br>
+		<li class="setreft">TOP 7
+		<p>다크에덴 M</p></li><br>
+		<li class="setreft">TOP 8
+		<p>LINEAGE M</p></li><br>
+		<li class="setreft">TOP 9
+		<p>삼국지 M</p></li><br>
+		<li class="setreft">TOP 10
+		<p>세븐나이츠</p></li><br>
+	</ul>
+	</aside>
+	<article class="c_view">
+		<span style="position:absolute ;left:210px; top:1883px;">&nbsp;VIEW TOP100</span>
+		<div class="c_view1">
+			<a href="co_sub1.html"> 
+				<img src="images/car.jpg"><br>
+				<p>슈퍼 픽셀 레이서즈</p>
+				<a class="price" href="#">5,000￦</a>
+			</a>
+		</div>
+		<div class="c_view2">
+			<a href="co_sub1.html"> 
+				<img src="images/battle5.jpg"><br>
+				<p>배틀필드5</p>
+				<a class="price" href="#">60,000￦</a>
+			</a>
+		</div>
+		<div class="c_view3">
+			<a href="co_sub1.html"> 
+				<img src="images/monsterhunter.jpg"><br>
+				<p>몬스터 헌터 월드</p>
+				<a class="price" href="#">80,000￦</a>
+			</a>
+		</div>
+		<div class="c_view4">
+			<a href="co_sub1.html"> 
+				<img src="images/mass.jpg"><br>
+				<p>매스 이펙트 : 안드로메다</p>
+				<a class="price" href="#">90,000￦</a>
+			</a>
+		</div>
+		<div class="c_view5">
+			<a href="co_sub1.html"> 
+				<img src="images/letsgo.jpg"><br>
+				<p>레츠고 포켓몬 피카츄, 이브이</p>
+				<a class="price" href="#">50,000￦</a>
+			</a>
+		</div>
+		<div class="c_view6">
+			<a href="co_sub1.html"> 
+				<img src="images/dit.jpg"><br>
+				<p>디트로이트 비컴 휴먼</p>
+				<a class="price" href="#">30,000￦</a>
+			</a>
+		</div>
+		<div class="c_view7">
+			<a href="co_sub1.html"> 
+				<img src="images/recon.jpg"><br>
+				<p>고스트리콘 : 와일드랜드</p>
+				<a class="price" href="#">45,000￦</a>
+			</a>
+		</div>
+		<div class="c_view8">
+			<a href="co_sub1.html"> 
+				<img src="images/show.jpg"><br>
+				<p>더 쇼 2017</p>
+				<a class="price" href="#">37,000￦</a>
+			</a>
+		</div>
+		<div class="c_view9">
+			<a href="co_sub1.html"> 
+				<img src="images/persona.jpg"><br>
+				<p>페르소나 4 골든</p>
+				<a class="price" href="#">20,000￦</a>
+			</a>
+		</div>
+		<div class="c_view10">
+			<a href="co_sub1.html"> 
+				<img src="images/war.jpg"><br>
+				<p>갓 오브 워 컬렉션</p>
+				<a class="price" href="#">19,000￦</a>
+			</a>
+		</div>
+		<div class="c_view11">
+			<a href="co_sub1.html"> 
+				<img src="images/ruyzi.jpg"><br>
+				<p>루이지 맨션</p>
+				<a class="price" href="#">17,000￦</a>
+			</a>
+		</div>
+		<div class="c_view12">
+			<a href="co_sub1.html"> 
+				<img src="images/arms.jpg"><br>
+				<p>ARMS</p>
+				<a class="price" href="#">40,000￦</a>
+			</a>
+		</div>
+	</article>
+<footer>
+		<ul class="policy">
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">채용안내</a></li>
+                <li><a href="#">윤리경영</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">청소년보호정책</a></li>
+                <li><a href="#">이메일무단수집거부</a></li>
+            </ul>
+            <address class="add">
+                <ul>
+                    <li>(주)브리더</li>
+                    <li>대표이사 고해찬</li>
+                    <li>경기도 의왕시 내손동 637-20</li>
+                    <li>대표전화 : 258-5678</li>
+                    <li>팩스 : 0502-258-5677</li><br>
+                    <li>E-mail : breeder@breeder.co.kr</li>
+                    <li>사업자등록번호 : 220-81-12345호</li>
+                    <li>통신판매업 신고번호 : 제2018-경기의왕-1925호</li>
+                </ul>
+            </address>
+            <p class="copy">&copy; 2018 Breeder Coporation. All Right Reserved.</p>
+	</footer>
+</body>
+</html>

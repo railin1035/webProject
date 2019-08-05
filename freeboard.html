@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+        <meta charset="utf-8" />
+        <title>Breeder:자유게시판</title>
+        <link href="https://fonts.googleapis.com/css?family=Exo:200,400,800" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+        
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="css/common.css">
+        <link rel="stylesheet" type="text/css" href="css/freeboard.css">
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="js/common.js"></script>
+        <script src="js/board.js"></script>
+        <script src="js/movePage.js"></script>
+        
+	</head>
+	<body>
+        <!-- ------- header ------- -->
+        <header>
+            <h1 class="logo"><a href="index.html"><img src="images/logo.png" alt="logo"></a></h1>
+            <div id="s_bar">
+                <from id="searchFrom" name="searchForm" method="get" action="">
+                    <p class="s_box">
+                        <input type="text" id="search" maxlength="30" name="search">
+                    </p>
+                    <p class="b_box">   
+                        <input type="submit" value="" id="go" onclick="searching()">
+                    </p>
+                </from>
+            </div>
+            <nav>
+                <p class="hamb" onclick="view(this)">
+                    <img src="images/hamburger.png">
+                </p>
+                <ul class="lnb clearfix">
+                    <li><a href="login.html" target="_blank">로그인</a></li>
+                    <li><a href="join.html" target="_blank">회원가입</a></li>
+                    <li><a href="cart.html" target="_blank">장바구니</a></li>
+                </ul>
+                <ul class="gnb">
+                    <li><a href="con_main.html">콘솔게임</a></li>
+                    <li><a href="pc_main.html">PC게임</a></li>
+                    <li><a href="#">모바일게임</a></li>
+                    <li><a href="freeboard.html">커뮤니티</a></li>
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">게임뉴스</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        
+        
+        <!-- ------- visual ------- -->
+        <section id="bVisual">
+            <h2 class="sTitle">COMMUNITY</h2>
+        </section>
+        
+        
+        <!-- ------- board ------- -->
+        <section id="board">
+            <div class="wrapper">
+                <div class="bTit">
+                    <h3 class="tit">자유 게시판</h3>
+                    <p class="titBar"></p>
+                </div>
+                
+                <div class="searchBar">
+                    <form id="bSearchForm" name="bSearchForm" method="get" action="">
+                        <div class="box">
+                            <select class="selectbox">
+                                <option selected>제목</option>
+                                <option>작성자</option>
+                                <option>글번호</option>
+                                <option>등록일</option>
+                            </select>
+                            <input type="text" name="bSearch" id="bSearch" >
+                            <input type="submit" class="sBtn" value="" onclick="searched()">
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="boardList">
+                    <div class="listName">
+                        <span class="itemTitle">제목</span>
+                        <span class="userTitle">작성자</span>
+                        <span class="dayTitle">등록일</span>
+                        <span class="countTitle">조회수</span>
+                    </div>
+                    <ul class="itemList">
+                        <li class="notice">
+                            <p class="number"><strong>공지</strong></p>
+                            <p class="item">
+                                <a href="#">브리더 12월 이벤트 안내</a>
+                            </p>
+                            <p class="userName">운영자</p>
+                            <p class="date">2018.12.01</p>
+                            <p class="count">1,200</p>
+                        </li>
+                        <li class="notice">
+                            <p class="number"><strong>공지</strong></p>
+                            <p class="item">
+                                <a href="#">자주 묻는 질문 안내</a>
+                            </p>
+                            <p class="userName">운영자</p>
+                            <p class="date">2018.03.03</p>
+                            <p class="count">2,560</p>
+                        </li>
+                        <li class="notice">
+                            <p class="number"><strong>공지</strong></p>
+                            <p class="item">
+                                <a href="#">자유게시판 이용 수칙</a>
+                            </p>
+                            <p class="userName">운영자</p>
+                            <p class="date">2018.03.02</p>
+                            <p class="count">1,727</p>
+                        </li>
+                        <li>
+                            <p class="number">9</p>
+                            <p class="item">
+                                <a href="#">[워커] 새로운 행성 업데이트 한거 존예로움</a><span class="new">&nbsp;&nbsp;&nbsp;new</span>
+                            </p>
+                            <p class="userName">도기조종사</p>
+                            <p class="date">2018.12.13</p>
+                            <p class="count">32</p>
+                        </li>
+                        <li>
+                            <p class="number">8</p>
+                            <p class="item">
+                                <a href="#">[서머너즈워] 나 이 캐 나왔는데 좋은거임?</a><span class="new">&nbsp;&nbsp;&nbsp;new</span>
+                            </p>
+                            <p class="userName">GGoChan</p>
+                            <p class="date">2018.12.13</p>
+                            <p class="count">196</p>
+                        </li>
+                        <li>
+                            <p class="number">7</p>
+                            <p class="item">
+                                <a href="#">겨울 세일 이벤트 안하나요? 90% 세일 해주세요</a>
+                            </p>
+                            <p class="userName">렐린님</p>
+                            <p class="date">2018.12.12</p>
+                            <p class="count">375</p>
+                        </li>
+                        <li>
+                            <p class="number">6</p>
+                            <p class="item">
+                                <a href="#">[로아] 유디아 지역 모코코 열매 위치</a>
+                            </p>
+                            <p class="userName">내일은해적왕</p>
+                            <p class="date">2018.12.11</p>
+                            <p class="count">961</p>
+                        </li>
+                        <li>
+                            <p class="number">5</p>
+                            <p class="item">
+                                <a href="#">[마리오] 슈퍼마리오 파티 같이 하실분 구함</a>
+                            </p>
+                            <p class="userName">루이지</p>
+                            <p class="date">2018.12.11</p>
+                            <p class="count">572</p>
+                        </li>
+                        <li>
+                            <p class="number">4</p>
+                            <p class="item">
+                                <a href="#">[마리오] 슈퍼마리오 오딧세이 쿠파깨고 나오는 보스러쉬 다깨신분?</a>
+                            </p>
+                            <p class="userName">Prince피치</p>
+                            <p class="date">2018.12.09</p>
+                            <p class="count">779</p>
+                        </li>
+                        <li>
+                            <p class="number">3</p>
+                            <p class="item">
+                                <a href="#">[젤다] 젤다 사당 및 주요 아이템 지도</a>
+                            </p>
+                            <p class="userName">내가링크다</p>
+                            <p class="date">2018.12.09</p>
+                            <p class="count">1,092</p>
+                        </li>
+                        <li>
+                            <p class="number">2</p>
+                            <p class="item">
+                                <a href="#">[로아] 아르카나 완전 상향 필요한거 아님? (징징글 주의)</a>
+                            </p>
+                            <p class="userName">호요정</p>
+                            <p class="date">2018.12.08</p>
+                            <p class="count">441</p>
+                        </li>
+                        <li>
+                            <p class="number">1</p>
+                            <p class="item">
+                                <a href="#">여기가 자유게시판인가염?</a>
+                            </p>
+                            <p class="userName">오께이</p>
+                            <p class="date">2018.12.07</p>
+                            <p class="count">441</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="write clearfix">
+                    <p class="writeBtn">글쓰기</p>
+                </div>
+                <div class="page">
+                    <span href="#" class="goBtn start"></span>
+                    <span href="#" class="goBtn pre"></span>
+                    <span href="#" class="num active">1</span>
+                    <span href="#" class="num">2</span>
+                    <span href="#" class="num">3</span>
+                    <span href="#" class="num">4</span>
+                    <span href="#" class="num">5</span>
+                    <span href="#" class="num">6</span>
+                    <span href="#" class="num">7</span>
+                    <span href="#" class="num">8</span>
+                    <span href="#" class="num">9</span>
+                    <span href="#" class="num">10</span>
+                    <span href="#" class="goBtn next"></span>
+                    <span href="#" class="goBtn end"></span>
+                </div>
+            </div>
+        </section>
+        
+        
+        <!-- ------- footer ------- -->
+        <footer>
+            <ul class="policy">
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">채용안내</a></li>
+                    <li><a href="#">윤리경영</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">청소년보호정책</a></li>
+                    <li><a href="#">이메일무단수집거부</a></li>
+                </ul>
+                <address class="add">
+                    <ul>
+                        <li>(주)브리더</li>
+                        <li>대표이사 고해찬</li>
+                        <li>경기도 의왕시 내손동 637-20</li>
+                        <li>대표전화 : 258-5678</li>
+                        <li>팩스 : 0502-258-5677</li><br>
+                        <li>E-mail : breeder@breeder.co.kr</li>
+                        <li>사업자등록번호 : 220-81-12345호</li>
+                        <li>통신판매업 신고번호 : 제2018-경기의왕-1925호</li>
+                    </ul>
+                </address>
+                <p class="copy">&copy; 2018 Breeder Coporation. All Right Reserved.</p>
+        </footer>       
+	</body>
+</html>
